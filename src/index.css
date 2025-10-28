@@ -1,0 +1,82 @@
+/* Reset and base styles */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #1b1f3b, #2a2d5c);
+    color: #f0f0f0;
+}
+
+/* Header styling */
+header {
+    height: 90px;
+    background: linear-gradient(90deg, #0f172a, #1e293b);
+    padding: 25px 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+nav > img {
+    width: 45px;
+    margin-right: 10px;
+    filter: drop-shadow(0 0 8px #61dafb);
+}
+
+nav > span {
+    color: #61dafb;
+    font-size: 1.6rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+/* Main content styling */
+main {
+    padding: 70px 40px;
+    background-image: url(/assets/react-logo-half.svg);
+    background-repeat: no-repeat;
+    background-position: right 60%;
+    background-size: 200px;
+}
+
+main > h1 {
+    margin: 0;
+    font-size: 2.6rem;
+    color: #61dafb;
+    text-shadow: 0 0 8px rgba(97, 218, 251, 0.5);
+}
+
+/* Fun facts list */
+.facts-list {
+    margin-top: 40px;
+    max-width: 500px;
+    list-style: none;
+    padding-left: 0;
+}
+
+.facts-list > li {
+    margin-bottom: 12px;
+    padding: 12px 16px;
+    background-color: rgba(255, 255, 255, 0.05);
+    border-left: 4px solid #61dafb;
+    border-radius: 8px;
+    line-height: 1.6;
+    transition: transform 0.2s ease, background 0.3s ease;
+}
+
+.facts-list > li:hover {
+    transform: translateX(8px);
+    background-color: rgba(97, 218, 251, 0.1);
+}
+
+.facts-list > li::marker {
+    color: #61dafb;
+    font-size: 1.3rem;
+}
